@@ -1,25 +1,26 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
-    box-sizing: border-box;
-    min-width: 650px;
-    color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+  min-width: 650px;
+  color: black;
 }
 
 body {
   background-image: linear-gradient(125deg, #6a5acd, #4682b4);
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
-h1, .container {
+h1,
+.container {
   padding: 10px;
 }
 
 .container {
-    max-width: 650px;
-    margin: auto;
-    margin-left: 0;
+  max-width: 650px;
+  margin: auto;
+  margin-left: 0;
 }
 
 .button {
@@ -27,7 +28,7 @@ h1, .container {
   border-radius: 1em;
   min-width: 100px;
   height: 40px;
-  margin:5px;
+  margin: 5px;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 12px;
@@ -49,7 +50,7 @@ h1, .container {
   width: 300px;
   border: none;
   border-radius: 1em;
-  border-bottom: 2px solid black;
+  border-bottom: 6px solid black;
   margin-right: 10px;
   margin-bottom: 10px;
   outline: none;
@@ -60,7 +61,8 @@ h1, .container {
   display: inline-flex;
 }
 
-.results {
+#results,
+.images {
   border: 1px solid black;
   border-radius: 1em;
   width: 800px;
@@ -82,5 +84,9 @@ h1, .container {
   margin-left: -2px;
   padding: 0;
   margin-top: 15px;
-  position:absolute;
+  position: absolute;
 }
+
+/* p:first-child {
+  font-weight: bold;
+} */
