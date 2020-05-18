@@ -79,8 +79,15 @@ h1 {
 }
 
 #clear {
-  margin-left: 550px;
+  margin-left: 575px;
   margin-bottom: 10px;
+  height: 40px;
+}
+
+#clear:hover {
+  background-color: lightgreen;
+  color: black;
+  font-size-adjust: auto;
 }
 
 #pull {
