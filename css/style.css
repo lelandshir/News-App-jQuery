@@ -17,6 +17,10 @@ h1,
   padding: 10px;
 }
 
+h1 {
+  margin-left: 225px;
+}
+
 .container {
   max-width: 650px;
   margin: auto;
@@ -45,6 +49,7 @@ h1,
   color: black;
 }
 
+#input,
 .input {
   height: 35px;
   width: 300px;
@@ -61,14 +66,12 @@ h1,
   display: inline-flex;
 }
 
-#results,
-.images {
+#results {
   border: 1px solid black;
   border-radius: 1em;
-  width: 800px;
+  width: 675px;
   max-height: fit-content;
-  margin-top: 1px;
-  margin-left: -2px;
+  margin: 3px;
   padding: 10px;
   background-color: white;
   color: black;
@@ -76,7 +79,7 @@ h1,
 }
 
 #clear {
-  margin-left: 690px;
+  margin-left: 550px;
   margin-bottom: 10px;
 }
 
@@ -87,6 +90,19 @@ h1,
   position: absolute;
 }
 
-/* p:first-child {
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
   font-weight: bold;
-} */
+  color: purple;
+  cursor: pointer;
+}
+
+div img {
+  border: 1px solid black;
+  border-radius: 1em;
+  width: 60px;
+}

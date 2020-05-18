@@ -16,10 +16,11 @@
   </head>
 
   <body>
-    <h1>code_name: ProjectOne</h1>
+    <h1>myTechNews</h1>
     <div class="container">
       <form id="input">
         <input
+          class="input"
           min="0"
           step="1"
           type="text"
@@ -27,21 +28,31 @@
         />
       </form>
 
-      <button class="button" id="test" type="submit">test</button>
+      <button class="button" id="test" type="submit">fetch</button>
       <!-- <button class="button" id="image" type="submit">image</button>
       <button class="button" id="null" type="submit">null</button>
       <button class="button" id="null" type="submit">null</button>
       <button class="button" id="null" type="submit">null</button> -->
 
-      <h1 id="pull">Results:</h1>
-      <button class="button" id="clear" type="submit">Clear Results</button>
+      <h2 id="pull">Feed</h2>
+      <button class="button" id="clear" type="submit">Clear Feed</button>
       <div id="results">
+        <h3 id="title">Story:&nbsp</h3>
+        <!--  -->
+        <div id="image"></div>
+        <!--  -->
+        <div id="description"></div>
+        <br>
+        <!--  -->
+        <h3 id="link">To read the full story&nbsp</h3>
+        <!--  -->
         <h3>Author:&nbsp</h3>
         <p id="author"></p>
-        <h3>Article:<br /></h3>
-        <p id="article"></p>
-      </div>
-      <span id="error"></span>
+        <!--  -->
+        <h3>Source:&nbsp</h3>
+        <p id="source"></p>
+        <!--  -->
+
     </div>
   </body>
 </html>
