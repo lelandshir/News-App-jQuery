@@ -23,7 +23,7 @@ h1 {
 
 .container {
   max-width: 650px;
-  margin: auto;
+  margin: 0 auto;
   margin-left: 0;
 }
 
@@ -60,6 +60,7 @@ h1 {
   margin-bottom: 10px;
   outline: none;
   font-size: 17px;
+  text-indent: 2.5px;
 }
 
 #form {
@@ -109,7 +110,7 @@ a:hover {
 }
 
 img {
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 1em;
   width: 100%;
 }
@@ -117,4 +118,16 @@ img {
 p,
 h2 {
   margin-left: 5px;
+}
+
+#image {
+  margin-top: 5px;
+}
+
+#title {
+  margin-left: 5px;
+}
+
+h4 {
+  margin-top: 5px;
 }
