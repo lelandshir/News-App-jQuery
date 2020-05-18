@@ -20,13 +20,18 @@
     <div class="container">
       <form id="input">
         <input
+          id="userInput"
           class="input"
           min="0"
           step="1"
           type="text"
-          placeholder="whatcha looking for?"
+          placeholder="   what're you looking for?"
         />
       </form>
+      <p>
+        Powered by
+        <a href="https://newsapi.org/" target="_blank">NewsAPI.org</a>
+      </p>
 
       <button class="button" id="test" type="submit">fetch</button>
       <!-- <button class="button" id="image" type="submit">image</button>
@@ -37,22 +42,19 @@
       <h2 id="pull">Feed</h2>
       <button class="button" id="clear" type="submit">Clear Feed</button>
       <div id="results">
-        <h3 id="title">Story:&nbsp</h3>
         <!--  -->
+        <h3 id="title"></h3>
         <div id="image"></div>
-        <!--  -->
-        <div id="description"></div>
-        <br>
-        <!--  -->
-        <h3 id="link">To read the full story&nbsp</h3>
-        <!--  -->
+        <p id="description"></p>
+        <h3>To read the full story&nbsp</h3>
+        <p id="link"></p>
         <h3>Author:&nbsp</h3>
         <p id="author"></p>
-        <!--  -->
         <h3>Source:&nbsp</h3>
         <p id="source"></p>
-        <!--  -->
-
+        <h3>Published:&nbsp</h3>
+        <p id="date"></p>
+      </div>
     </div>
   </body>
 </html>

@@ -2,10 +2,12 @@
 //query for #test button and have it return the value of the user #input from the form
 // const $userInput = $(`#input`).val();
 const $userInput = $('input[type="text"]').val();
-let link = `http://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=61a0acd611c1417e8f154193a705fd5c`;
+// let link = `http://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=61a0acd611c1417e8f154193a705fd5c`;
 
 $(() => {
-  $(`#test`).click((ev) => {
+  $(`.button`).click((ev) => {
+    const $userInput = $(`#userInput`).val();
+    let link = `http://newsapi.org/v2/top-headlines?country=us&category=${$userInput}&apiKey=61a0acd611c1417e8f154193a705fd5c`;
     event.preventDefault();
 
     $.ajax({
@@ -16,22 +18,21 @@ $(() => {
       .then((data) => {
         // console.log(data);
         for (let i of data.articles) {
-          for (let i = 0; i < 20; i++) {
+          for (let i = 0; i <= 20; i++) {
             if ($userInput === " ") {
               alert(`this field cannot be empty`);
             } else {
-              console.log(data);
-
               let $results = $(`#results`); //main results div
 
-              $(`#image`).append(`<img src="${data.articles[i].urlToImage}"/>`);
-              $(`#title`).html(data.articles[i].title);
-              $(`#author`).html(`${data.articles[i].author}`);
-              $(`#source`).html(data.articles[i].source.name);
+              $(`#image`).append(`<img src="${data.articles[0].urlToImage}"/>`);
+              $(`#title`).html(data.articles[0].title);
+              $(`#author`).html(`${data.articles[0].author}`);
+              $(`#source`).html(data.articles[0].source.name);
               $(`#link`).append(
-                `<a href="${data.articles[i].url}" target="_blank">click here</a>`
+                `<a href="${data.articles[0].url}" target="_blank">click here</a>`
               );
-              $(`#description`).html(`${data.articles[i].description}`);
+              $(`#description`).html(`${data.articles[0].description}`);
+              $(`#date`).html(`${data.articles[0].publishedAt}`);
 
               // $(`#article`).html(data.articles[i].title);
             }
