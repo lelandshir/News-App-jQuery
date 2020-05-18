@@ -3,10 +3,14 @@
   <head>
     <!-- link css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ProjectOne LS</title>
+    <title>myNews</title>
     <!-- link js + jq below -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -28,10 +32,6 @@
           placeholder="topic of interest?"
         />
       </form>
-      <p>
-        Powered by
-        <a href="https://newsapi.org/" target="_blank">NewsAPI.org</a>
-      </p>
 
       <button class="button" id="fetch" type="submit">fetch</button>
 
@@ -40,6 +40,10 @@
       <div id="container-2">
         <!-- //build out results div to be appeneded -->
       </div>
+      <p id="apiNews">
+        Powered by
+        <a href="https://newsapi.org/" target="_blank">NewsAPI.org</a>
+      </p>
     </div>
   </body>
 </html>

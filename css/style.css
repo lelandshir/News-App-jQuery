@@ -1,15 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
   box-sizing: border-box;
   min-width: 650px;
   color: black;
+  font-size: 17px;
 }
 
 body {
   background-image: linear-gradient(125deg, #6a5acd, #4682b4);
   min-height: 100vh;
+  min-width: 100%;
 }
 
 h1,
@@ -19,6 +20,7 @@ h1,
 
 h1 {
   margin-left: 225px;
+  color: white;
 }
 
 .container {
@@ -58,6 +60,7 @@ h1 {
   border-bottom: 6px solid black;
   margin-right: 10px;
   margin-bottom: 10px;
+  margin: 0 auto;
   outline: none;
   font-size: 17px;
   text-indent: 2.5px;
@@ -130,8 +133,7 @@ img {
   max-width: 10%;
 }
 
-p,
-h2 {
+p {
   margin-left: 5px;
 }
 
@@ -146,4 +148,25 @@ h2 {
 
 h4 {
   margin-top: 5px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Squada One", cursive;
+}
+
+h1,
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+#apiNews,
+#pull {
+  color: white;
 }

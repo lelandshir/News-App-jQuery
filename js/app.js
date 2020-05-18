@@ -8,7 +8,7 @@ $(() => {
   //clear buton --working on emptying only the populated html
   $(`#clear`).click((event) => {
     // console.log(`hi`);
-    $(`#results`).children().empty(`<p>`);
+    $(`#container-2`).empty();
   });
   //on fetch click user searches for topic they type in=>topics are limited
   $(`#fetch`).click((ev) => {
@@ -22,7 +22,7 @@ $(() => {
       limit: 20,
     })
       .then((data) => {
-        console.log(data.articles);
+        // console.log(data.articles);
 
         for (let i of data.articles) {
           for (let i = 0; i <= data.articles.length; i++) {
