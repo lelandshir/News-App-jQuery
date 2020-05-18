@@ -29,7 +29,6 @@ $(() => {
             if ($userInput === " ") {
               alert(`this field cannot be empty`);
             } else {
-              //troubles => iterating through articles; I'm inserting data retrieved into the dom but need a section for each article in the array so that users can scroll up and see all articles
               let $results = $(`<div id="results">
           <!--  -->
           <h3 id="title">${data.articles[i].title}</h3>
@@ -44,16 +43,6 @@ $(() => {
           <h4>Date/Time&nbsp</h4>
           <p id="date">${data.articles[i].publishedAt}</p>
         </div>`).appendTo(`#container-2`);
-
-              // $(`#title`).html(`${data.articles[i].title}`);
-              // $(`#image`).html(`<img src="${data.articles[i].urlToImage}"/>`);
-              // $(`#description`).html(`${data.articles[i].description}`);
-              // $(`#link`).html(
-              //   `<a href="${data.articles[i].url}" target="_blank">tap here for the full story</a>`
-              // );
-              // $(`#author`).html(`${data.articles[i].author}`);
-              // $(`#source`).html(`${data.articles[i].source.name}`);
-              // $(`#date`).html(`${data.articles[i].publishedAt}`);
             }
           }
         }
