@@ -102,12 +102,7 @@ img {
   border-radius: 1rem;
   width: 100%;
   padding: 0;
-  height: 375px;
-}
-
-p {
-  font-size: 20px;
-  padding: 0;
+  height: auto;
 }
 
 #image {
@@ -115,6 +110,7 @@ p {
   margin-bottom: 5px;
   padding: 0;
   margin: 0 auto;
+  width: 100%;
 }
 
 h1 {
@@ -137,6 +133,11 @@ h3 {
   padding: 0;
   margin-bottom: 15px;
   margin-top: 15px;
+}
+
+p {
+  font-size: 20px;
+  padding: 0;
 }
 
 #apiNews,
