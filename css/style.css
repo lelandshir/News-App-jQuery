@@ -177,3 +177,9 @@ p {
   cursor: pointer;
   width: fit-content;
 }
+
+searchTag:hover {
+  font-weight: bold;
+  color: purple;
+  cursor: pointer;
+}

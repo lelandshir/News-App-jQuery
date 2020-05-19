@@ -2,16 +2,15 @@ $(() => {
   $(`#clear`).click((ev) => {
     $(`#container-2`).empty();
   });
-
-  $(`#searchTag`).click((ev) => {
-    console.log(`clicked`);
-    let $tag = $(`#searchTag`).html();
+  //
+  $(`.searchTag`).click((ev) => {
+    let $tag = $(ev.currentTarget).html();
     $(`.input`).val($tag);
   });
 
-  const promise = $(`.input`).on(`keypress`, (ev) => {
+  $(`.input`).on(`keypress`, (ev) => {
     let userInput = $(`.input`).val();
-    console.log(userInput);
+
     let link = `https://newsapi.org/v2/top-headlines?country=us&category=${userInput}&apiKey=61a0acd611c1417e8f154193a705fd5c`;
 
     if (ev.keyCode == 13 && $(`.input`).val() != "") {
@@ -22,8 +21,6 @@ $(() => {
         type: `GET`,
       })
         .then((data) => {
-          console.log(data);
-          // console.log(data.articles);
           for (let i = 0; i <= data.articles.length; i++) {
             let $results = $(`<div id="results">
                  <h3 id="title">${data.articles[i].title}</h3>
