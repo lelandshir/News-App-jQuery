@@ -164,7 +164,7 @@ p {
   padding: 0;
 }
 
-#searchTag {
+.searchTag {
   color: white;
   display: inline-flex;
   border: 1px solid white;
