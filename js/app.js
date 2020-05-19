@@ -34,7 +34,7 @@ $(() => {
           <div id="image"><img src="${data.articles[i].urlToImage}"/></div>
           <p id="description">${data.articles[i].description}</p></br>
           <h4>Follow</h4><p id="link"><a href="${data.articles[i].url}" target="_blank">=> tap here for the full story</a></p>
-          <p><center>_________________________________________________________________________</center></p></br>
+          <p><center>________________________________________________________</center></p></br>
           <h4>Author&nbsp</h4>
           <p id="author">${data.articles[i].author}</p>
           <h4>Source&nbsp</h4>
