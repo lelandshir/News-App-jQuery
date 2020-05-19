@@ -23,7 +23,6 @@ $(() => {
       .then((data) => {
         console.log(data.articles);
 
-        // for (let i of data.articles) {
         for (let i = 0; i <= data.articles.length; i++) {
           if ($userInput === "") {
             // alert(`this field cannot be empty`);
@@ -34,7 +33,6 @@ $(() => {
           <div id="image"><img src="${data.articles[i].urlToImage}"/></div>
           <p id="description">${data.articles[i].description}</p></br>
           <h4>Follow</h4><p id="link"><a href="${data.articles[i].url}" target="_blank">=> tap here for the full story</a></p>
-          <p><center>________________________</center></p></br>
           <h4>Author&nbsp</h4>
           <p id="author">${data.articles[i].author}</p>
           <h4>Source&nbsp</h4>
@@ -42,7 +40,6 @@ $(() => {
           <h4>Date/Time&nbsp</h4>
           <p id="date">${data.articles[i].publishedAt}</p>
         </div>`).appendTo(`#container-2`);
-            // }
           }
         }
       })
