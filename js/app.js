@@ -4,7 +4,7 @@ $(() => {
   });
   $(`#fetch`).click((ev) => {
     const $userInput = $(`#userInput`).val();
-
+    //add functionality so that the return key
     event.preventDefault();
 
     let link = `https://newsapi.org/v2/top-headlines?country=us&category=${$userInput}&apiKey=61a0acd611c1417e8f154193a705fd5c`;
@@ -32,7 +32,6 @@ $(() => {
           <h4>Date/Time</h4>
           <p id="date">${data.articles[i].publishedAt}</p>
         </div>`).appendTo(`#container-2`);
-            // $results.empty();
           }
         }
       })
