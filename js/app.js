@@ -2,6 +2,9 @@ $(() => {
   $(`#clear`).click((event) => {
     $(`#container-2`).empty();
   });
+  let $quickSearch = $(`#searchTag`).click((ev) => {
+    $(`#userInput`) = $(`searchTag`).html();
+  });
   $(`#fetch`).click((ev) => {
     const $userInput = $(`#userInput`).val();
     //add functionality so that the return key
