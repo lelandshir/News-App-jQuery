@@ -53,7 +53,7 @@ body {
   outline: none;
   font-size: 12px;
   text-indent: 1.5px;
-  padding: 5px;
+  padding-bottom: 10px;
 }
 
 #results {
