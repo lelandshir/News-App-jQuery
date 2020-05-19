@@ -86,7 +86,7 @@ body {
 a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 18px;
   color: blue;
   padding: 0;
 }
@@ -98,14 +98,15 @@ a:hover {
 }
 
 img {
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 1rem;
   width: 100%;
   padding: 0;
+  max-height: 300px;
 }
 
 p {
-  font-size: 12px;
+  font-size: 20px;
   padding: 0;
 }
 
@@ -126,15 +127,16 @@ h1 {
 h2,
 h4 {
   font-family: "Squada One", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   padding: 0;
 }
 
 h3 {
   font-family: "Squada One", sans-serif;
-  font-size: 17px;
+  font-size: 30px;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 #apiNews,
