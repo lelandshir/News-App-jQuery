@@ -5,6 +5,18 @@ const $userInput = $('input[type="text"]').val();
 // let link = `http://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=61a0acd611c1417e8f154193a705fd5c`;
 
 $(() => {
+  let dt = new Date();
+  $("#datetime").html(
+    ("0" + (dt.getMonth() + 1)).slice(-2) +
+      "/" +
+      ("0" + dt.getDate()).slice(-2) +
+      "/" +
+      dt.getFullYear() +
+      " " +
+      ("0" + dt.getHours() + 1).slice(-2) +
+      ":" +
+      ("0" + dt.getMinutes() + 1).slice(-2)
+  );
   //clear buton --working on emptying only the populated html
   $(`#clear`).click((event) => {
     // console.log(`hi`);

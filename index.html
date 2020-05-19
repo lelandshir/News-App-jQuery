@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- link css -->
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
       rel="stylesheet"
@@ -19,32 +19,34 @@
     <script src="js/app.js" charset="utf-8"></script>
   </head>
 
-  <body><center>
-    <h1>myNewsapp</h1>
-    <div class="container">
-      <form id="input">
-        <input
-          id="userInput"
-          class="input"
-          min="0"
-          step="1"
-          type="text"
-          placeholder="topic of interest?"
-        />
-      </form>
+  <body>
+    <center>
+      <h1>myNews</h1>
+      <div class="container">
+        <form id="input">
+          <input
+            id="userInput"
+            class="input"
+            min="0"
+            step="1"
+            type="text"
+            placeholder="topic of interest?"
+          />
+        </form>
 
-      <button class="button" id="fetch" type="submit">fetch</button>
+        <button class="button" id="fetch" type="submit">fetch</button>
 
-      <button class="button" id="clear" type="submit">Clear Feed</button>
-      <h2 id="pull">News Feed</h2>
-      <div id="container-2">
-        <p id="timeDay"></p>
-        <!-- build #results div to be append here -->
+        <button class="button" id="clear" type="submit">Clear Feed</button>
+        <h2 id="pull">the feed</h2>
+        <div id="container-2">
+          <p><span id="datetime"></span></p>
+          <!-- build #results div to be append here -->
+        </div>
+        <p id="apiNews">
+          Powered by
+          <a href="https://newsapi.org/" target="_blank">NewsAPI.org</a>
+        </p>
       </div>
-      <p id="apiNews">
-        Powered by
-        <a href="https://newsapi.org/" target="_blank">NewsAPI.org</a>
-      </p>
-    </div>
+    </center>
   </body>
 </html>
