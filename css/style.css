@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
   width: 100%;
@@ -11,6 +11,8 @@ body {
   background-image: linear-gradient(125deg, #6a5acd, #4682b4);
   min-height: 100vh;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -51,6 +53,7 @@ body {
   outline: none;
   font-size: 17px;
   text-indent: 1.5px;
+  padding: 0;
 }
 
 #results {
@@ -58,10 +61,10 @@ body {
   border-radius: 1em;
   width: 100%;
   max-height: fit-content;
-  padding: 10px;
+  padding: 3px;
   background-color: white;
   color: black;
-  font-size: 17px;
+  font-size: 12px;
   margin-bottom: 20px;
 }
 
@@ -73,15 +76,16 @@ body {
   width: 100%;
   max-height: fit-content;
   margin: 5px;
-  padding: 50px;
+  padding: 5px;
   background-color: lightblue;
 }
 
 a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 12px;
   color: blue;
+  padding: 0;
 }
 
 a:hover {
@@ -94,44 +98,48 @@ img {
   border: 1px solid black;
   border-radius: 1em;
   width: 100%;
+  padding: 0;
 }
 
 p {
-  margin-left: 5px;
-  font-size: 30px;
+  font-size: 12px;
   padding: 0;
 }
 
 #image {
   margin-top: 5px;
   margin-bottom: 5px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 h1 {
   color: white;
-  font-size: 100px;
+  font-size: 50px;
   font-family: "Squada One", sans-serif;
+  padding: 0;
 }
 
 h2,
 h4 {
   font-family: "Squada One", sans-serif;
-  font-size: 35px;
+  font-size: 15px;
+  padding: 0;
 }
 
 h3 {
   font-family: "Squada One", sans-serif;
-  font-size: 40px;
-}
-
-h4 {
-  margin-top: 5px;
+  font-size: 17px;
+  padding: 0;
+  margin-bottom: 5px;
 }
 
 #apiNews,
 #pull {
   color: white;
   margin-top: 15px;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 #date {
@@ -142,4 +150,5 @@ h4 {
   font-size: 12px;
   color: white;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
