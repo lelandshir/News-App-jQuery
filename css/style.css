@@ -230,7 +230,7 @@ p {
     min-height: 100vh;
   }
   img {
-    min-width: 100%;
+    width: 100%;
   }
   .input {
     font-size: 7px;
