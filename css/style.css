@@ -6,7 +6,6 @@ body {
   margin: 0 auto;
   height: fit-content;
   max-width: 958px;
-  /* margin-right: 17px; */
 }
 
 .container {
@@ -72,7 +71,9 @@ body {
   border-radius: 1rem;
   max-height: fit-content;
   margin: 0 auto;
-  max-width: 85%;
+  min-width: fit-content;
+  max-width: 90%;
+  padding: 0;
 }
 
 a {
@@ -110,9 +111,10 @@ img {
 
 #image {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   max-width: fit-content;
+  text-align: center;
 }
 
 h1 {
@@ -225,6 +227,10 @@ p {
   body {
     max-width: 100%;
     margin-right: 18px;
+    min-height: 100vh;
+  }
+  img {
+    min-width: 100%;
   }
   .input {
     font-size: 7px;
