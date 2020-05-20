@@ -227,11 +227,7 @@ p {
   body {
     max-width: 90%;
     margin-right: 28px;
-    min-height: 100vh;
-  }
-  img {
-    /* width: 100%; */
-    max-height: 50%;
+    /* min-height: 100vh; */
   }
   .input {
     font-size: 7px;
