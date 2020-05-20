@@ -63,7 +63,8 @@ body {
   border-radius: 1rem;
   max-height: fit-content;
   margin: 0 auto;
-  width: 45%;
+  width: 55%;
+  padding: 10px;
 }
 
 a {
