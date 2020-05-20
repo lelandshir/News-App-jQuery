@@ -1,15 +1,15 @@
 body {
-  text-align: left;
   box-sizing: border-box;
   background-image: linear-gradient(125deg, #6a5acd, #4682b4);
   min-height: 100vh;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   height: fit-content;
   width: 100%;
 }
 
 .container {
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -50,21 +50,21 @@ body {
 #results {
   border: .5px solid black;
   border-radius: 1rem;
-  width: 80%;
+  width: 100%;
   max-height: fit-content;
-  padding: 20px;
+  padding: 10px;
   background-color: white;
   color: black;
   font-size: 12px;
-  margin: 10px;
+  margin-bottom: 20px;
 }
 
 #container-2 {
+  padding: 0;
   border-radius: 1rem;
   max-height: fit-content;
   margin: 0 auto;
-  width: 40%;
-  padding: 0;
+  width: 55%;
 }
 
 a {
@@ -84,15 +84,16 @@ a:hover {
 img {
   border: 0.5px solid black;
   border-radius: 1rem;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding: 0;
   height: auto;
 }
 
 #image {
+  margin: 0 auto;
   padding: 0;
-  width:90%;
+  width: 100%;
 }
 
 h1 {
@@ -189,5 +190,7 @@ p {
 }
 
 #title {
-  width: 100%;
+  text-align: left;
+
+  width: 80%;
 }
