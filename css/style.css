@@ -218,4 +218,7 @@ p {
   body {
     max-width: 100%
   }
+  .input {
+    font-size: 6px;
+  }
 }
