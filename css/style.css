@@ -29,7 +29,7 @@ body {
 }
 
 .button:hover {
-  background-color: lightgreen;
+  background-color: lightblue;
   color: black;
 }
 
@@ -99,7 +99,7 @@ img {
 h1 {
   color: darkblue;
   margin-bottom: 10px;
-  font-size: 50px;
+  font-size: 60px;
   font-family: 'Anton', sans-serif;
   padding: 0;
 }
@@ -166,7 +166,7 @@ p {
 }
 
 .searchTag:hover {
-  background-color: lightgreen;
+  background-color: lightblue;
   color: black;
   cursor: pointer;
 }
