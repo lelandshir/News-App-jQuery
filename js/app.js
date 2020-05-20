@@ -1,13 +1,14 @@
 $(() => {
+  //clear feed
   $(`#clear`).click((ev) => {
     $(`#container-2`).empty();
   });
-
+  //search tags
   $(`.searchTag`).click((ev) => {
     let $tag = $(ev.currentTarget).html();
     $(`.input`).val($tag);
   });
-
+  // search on 13
   $(`.input`).on(`keypress`, (ev) => {
     let userInput = $(`.input`).val();
 
@@ -23,19 +24,20 @@ $(() => {
         type: `GET`,
       })
         .then((data) => {
+          // console.log(data.articles);
           for (let i = 0; i <= data.articles.length; i++) {
             let $results = $(`<div id="results">
-                 <h3 id="title">${data.articles[i].title}</h3>
+                  <h3 id="title">${data.articles[i].title}</h3>
                   <p id="source">${data.articles[i].source.name} | <span id="dateTime"> ${data.articles[i].publishedAt}</span></p>
-                 <div id="image"><img src="${data.articles[i].urlToImage}"/></div>
-                 <p id="description">${data.articles[i].description}..<a href="${data.articles[i].url}" target="_blank"> Full Story</a></p>
-                 <p id="author">${data.articles[i].author}</p>
-               </div>`).appendTo(`#container-2`);
+                  <div id="image"><img src="${data.articles[i].urlToImage}"/></div>
+                  <p id="description">${data.articles[i].description}..<a href="${data.articles[i].url}" target="_blank">Read full story</a></p>
+                  <p id="author">${data.articles[i].author}</p>
+                  </div>`).appendTo(`#container-2`);
             $(`.input`).val("");
           }
         })
         .catch((error) => {
-          console.log(error);
+          return error;
         });
     }
   });
