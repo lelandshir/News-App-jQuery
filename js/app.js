@@ -15,6 +15,7 @@ $(() => {
 
     if (ev.keyCode == 13 && $(`.input`).val() != "") {
       $(`#container-2`).empty();
+      $(`#text`).empty();
 
       event.preventDefault();
 
@@ -23,6 +24,12 @@ $(() => {
         type: `GET`,
       })
         .then((data) => {
+          let $text = $(
+            `<h4 id="pull">here are the nation's top headlines in ${userInput}</h4>`
+          )
+            .hide()
+            .appendTo(`#text`)
+            .fadeIn(`slow`);
           for (let i = 0; i <= data.articles.length; i++) {
             let $results = $(`<div id="results">
                   <h3 id="title">${data.articles[i].title}</h3>
@@ -31,7 +38,10 @@ $(() => {
                   <p id="description">${data.articles[i].description}</p>
                   <p id="author">${data.articles[i].author}</p>
                   <p id="story">for full story <a id="link" href="${data.articles[i].url}" target="_blank">tap me</a></p>
-                  </div>`).appendTo(`#container-2`);
+                  </div>`)
+              .hide()
+              .appendTo(`#container-2`)
+              .fadeIn(4000);
             $(`.input`).val("");
           }
         })
