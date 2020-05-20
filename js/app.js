@@ -2,7 +2,7 @@ $(() => {
   $(`#clear`).click((ev) => {
     $(`#container-2`).empty();
   });
-  //
+
   $(`.searchTag`).click((ev) => {
     let $tag = $(ev.currentTarget).html();
     $(`.input`).val($tag);
@@ -15,7 +15,9 @@ $(() => {
 
     if (ev.keyCode == 13 && $(`.input`).val() != "") {
       $(`#container-2`).empty();
+
       event.preventDefault();
+
       $.ajax({
         url: link,
         type: `GET`,
