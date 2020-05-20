@@ -109,7 +109,7 @@ img {
 }
 
 #image {
-  display: flex;
+  /* display: flex; */
   margin: 0 auto;
   padding: 0;
   max-width: fit-content;
