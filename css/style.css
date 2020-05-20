@@ -225,8 +225,8 @@ p {
 
 @media only screen and (max-width: 600px) {
   body {
-    max-width: 100%;
-    margin-right: 18px;
+    max-width: 90%;
+    margin-right: 28px;
     min-height: 100vh;
   }
   img {
