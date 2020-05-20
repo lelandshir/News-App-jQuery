@@ -45,6 +45,9 @@ body {
   font-size: 12px;
   text-indent: 1.5px;
   padding: 0;
+  font-size-adjust: auto;
+  padding-bottom: 2px;
+  text-align: center;
 }
 
 #results {
@@ -219,6 +222,6 @@ p {
     max-width: 100%
   }
   .input {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
