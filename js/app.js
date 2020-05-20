@@ -29,8 +29,8 @@ $(() => {
                   <p id="source">${data.articles[i].source.name} | <span id="dateTime"> ${data.articles[i].publishedAt}</span></p>
                   <div id="image"><img src="${data.articles[i].urlToImage}"/></div>
                   <p id="description">${data.articles[i].description}</p>
-                  <p><a href="${data.articles[i].url}" target="_blank">Get the Full Story</a></p>
                   <p id="author">${data.articles[i].author}</p>
+                  <p><a href="${data.articles[i].url}" target="_blank">Get the Full Story</a></p>
                   </div>`).appendTo(`#container-2`);
             $(`.input`).val("");
           }
