@@ -1,6 +1,11 @@
 theFeed
 Humble Search Engine
 README
+////////////////////////////////////////////////////////////////////////////////////
+TECHNOLOGIES:
+-html/css
+-javaScript/jQuery
+-NewsAPI
 
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -26,18 +31,24 @@ README
 
 DESIRED ADDITIONS:
 
-1. I would like to add some buttons to the story tiles;
+Make it more social!
+
+1. people should be able to sign up with facebook or google, use those API's to add that feature
+
+2. I would like to add some buttons to the story tiles;
     -one that allows the user to save a story to read later
-    -one to share a story with from the tile
-    -one to
+    -one to share a story from the tile
+    -ability to like or comment on individual stories
 
 2. I'd like to broaden the search topics we can search for
 
-3. I want the suggested search tags to be draggable and droppable rather than click and 13
+3. Drag and drop tags
+
+4.  More API's, more news
 
 ////////////////////////////////////////////////////////////////////////////////////
 WINS:
-0.  I sent the live link to my mother and a few friends, many have reported that it looks great on their mobile device and just about everyone has found themselves sort of mindlessly scrolling through news and following the links to headlines... which is what we want 
+0.  I sent the live link to my mother and a few friends, many have reported that it looks great on their mobile device and just about everyone has found themselves sort of mindlessly scrolling through news and following the links to headlines... which is what we want
 
 1. Lots of failures -- a calm sea never made a skilled sailor sort of feeling.
 

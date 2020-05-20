@@ -1,14 +1,13 @@
 $(() => {
-  //clear feed
   $(`#clear`).click((ev) => {
     $(`#container-2`).empty();
   });
-  //search tags
+
   $(`.searchTag`).click((ev) => {
     let $tag = $(ev.currentTarget).html();
     $(`.input`).val($tag);
   });
-  // search on 13
+
   $(`.input`).on(`keypress`, (ev) => {
     let userInput = $(`.input`).val();
 
@@ -24,7 +23,6 @@ $(() => {
         type: `GET`,
       })
         .then((data) => {
-          // console.log(data.articles);
           for (let i = 0; i <= data.articles.length; i++) {
             let $results = $(`<div id="results">
                   <h3 id="title">${data.articles[i].title}</h3>
@@ -37,7 +35,7 @@ $(() => {
           }
         })
         .catch((error) => {
-          return error;
+          console.log(error);
         });
     }
   });
