@@ -30,7 +30,7 @@ $(() => {
                   <div id="image"><img src="${data.articles[i].urlToImage}"/></div>
                   <p id="description">${data.articles[i].description}</p>
                   <p id="author">${data.articles[i].author}</p>
-                  <p id="story">for the full story <a id="link" href="${data.articles[i].url}" target="_blank">tap me</a></p>
+                  <p id="story">for full story <a id="link" href="${data.articles[i].url}" target="_blank">tap me</a></p>
                   </div>`).appendTo(`#container-2`);
             $(`.input`).val("");
           }
