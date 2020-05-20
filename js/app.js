@@ -24,15 +24,10 @@ $(() => {
           for (let i = 0; i <= data.articles.length; i++) {
             let $results = $(`<div id="results">
                  <h3 id="title">${data.articles[i].title}</h3>
+                  <p id="source">${data.articles[i].source.name} | <span id="dateTime"> ${data.articles[i].publishedAt}</span></p>
                  <div id="image"><img src="${data.articles[i].urlToImage}"/></div>
-                 <p id="description">${data.articles[i].description}</p></br>
-                 <h4>Follow</h4><p id="link"><a href="${data.articles[i].url}" target="_blank">tap here for the full story</a></p>
-                 <h4>Author</h4>
+                 <p id="description">${data.articles[i].description}..<a href="${data.articles[i].url}" target="_blank"> Full Story</a></p>
                  <p id="author">${data.articles[i].author}</p>
-                 <h4>Source</h4>
-                 <p id="source">${data.articles[i].source.name}</p>
-                 <h4>Date/Time</h4>
-                 <p id="date">${data.articles[i].publishedAt}</p>
                </div>`).appendTo(`#container-2`);
             $(`.input`).val("");
           }
