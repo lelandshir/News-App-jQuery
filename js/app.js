@@ -5,14 +5,15 @@ $(() => {
 
   $(`#clear`).click((ev) => {
     $(`#container-2`).empty();
+    $(`#pull`).empty();
   });
 
-  $(`.searchTag`).click((ev) => {
+  $(`.button`).click((ev) => {
     let $tag = $(ev.currentTarget).html();
     $(`.input`).val($tag);
   });
 
-  $(`.searchTag`).click((ev) => {
+  $(`.button`).click((ev) => {
     // $(`.input`).on(`keypress`, (ev) => {
     let userInput = $(`.input`).val();
 

@@ -7,24 +7,9 @@ body {
   max-width: 90%;
 }
 
-.button {
-  border: 1px solid white;
-  border-radius: 1rem;
-  width: fit-content;
-  height: 30px;
-  font-weight: bold;
-  font-size: 9px;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  outline: none;
-  padding: 2px;
-  margin-bottom: 35px;
-}
-
-.button:hover {
-  background-color: lightblue;
-  color: black;
+.container {
+  padding: 0;
+  margin: 0 auto;
 }
 
 .input {
@@ -80,14 +65,14 @@ a {
   border: 1px solid white;
   text-shadow: 5px;
   border-radius: 1rem;
-  background-color: lightblue;
+  background-color: darkblue;
 }
 
 #link:hover {
   font-weight: bold;
   color: black;
   cursor: pointer;
-  background-color: darkblue;
+  background-color: lightblue;
 }
 
 img {
@@ -145,7 +130,7 @@ p {
 #apiNews {
   color: white;
   margin-bottom: 15px;
-  letter-spacing: 1px;
+  font-size: 12px;
 }
 
 #date {
@@ -162,7 +147,7 @@ p {
   padding: 0;
 }
 
-.searchTag {
+.button, #clear {
   color: white;
   display: inline-flex;
   border: 1px solid white;
@@ -177,7 +162,7 @@ p {
   margin-top: 10px;
 }
 
-.searchTag:hover {
+.button:hover {
   background-color: lightblue;
   color: black;
   cursor: pointer;
