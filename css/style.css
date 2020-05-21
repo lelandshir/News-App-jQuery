@@ -215,5 +215,6 @@ p {
     font-size: 11px;
     width: 80%;
     height: 35px;
+    overflow: visible;
   }
 }
