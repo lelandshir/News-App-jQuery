@@ -224,7 +224,8 @@ p {
     min-height: 100vh;
   }
 #results {
-  max-width: 90%
+  min-width: 90%;
+  max-width: 90%;
 }
 #description {
   max-width: 99%;
