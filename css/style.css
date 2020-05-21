@@ -216,5 +216,6 @@ p {
     width: 80%;
     height: 35px;
     overflow: visible;
+    padding-bottom: 4px;
   }
 }
