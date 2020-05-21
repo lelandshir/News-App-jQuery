@@ -212,6 +212,8 @@ p {
   max-width: 99%;
 }
   .input {
-    font-size: 12px;
+    font-size: 11px;
+    width: 80%;
+    height: 35px;
   }
 }
