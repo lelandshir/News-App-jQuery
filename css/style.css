@@ -226,6 +226,9 @@ p {
 #results {
   max-width: 90%
 }
+#description {
+  max-width: 99%;
+}
   .input {
     font-size: 7px;
   }
