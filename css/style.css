@@ -6,11 +6,6 @@ body {
   margin: 0 auto;
   max-width: 90%;
 }
-/*
-.container {
-  margin: 0;
-  padding: 0;
-} */
 
 .button {
   border: 1px solid white;
@@ -60,6 +55,7 @@ body {
   color: black;
   font-size: 12px;
   margin-bottom: 20px;
+  overflow: scroll;
 }
 
 #container-2 {
