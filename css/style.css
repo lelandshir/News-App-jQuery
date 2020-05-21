@@ -80,14 +80,14 @@ a {
   border: 1px solid white;
   text-shadow: 5px;
   border-radius: 1rem;
-  background-color: darkblue;
+  background-color: lightblue;
 }
 
 #link:hover {
   font-weight: bold;
   color: black;
   cursor: pointer;
-  background-color: lightblue;
+  background-color: darkblue;
 }
 
 img {
