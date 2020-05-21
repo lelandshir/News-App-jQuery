@@ -213,9 +213,10 @@ p {
   max-width: 99%;
 }
   .input {
-    font-size: 11px;
+    font-size: .7em;
     width: 80%;
-    height: 50px;
+    height: 35px;
     overflow: scroll;
+    padding: 15px 20px 15px 0;
   }
 }
