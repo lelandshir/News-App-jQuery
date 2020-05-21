@@ -203,6 +203,7 @@ p {
 #description {
   margin: 5px;
   margin-bottom: 5px;
+  max-width: 99%;
 }
 
 #title {
