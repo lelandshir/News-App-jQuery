@@ -4,7 +4,7 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 55%;
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
 
 .input {
   height: 35px;
-  width: 50%;
+  width: 55%;
   border: none;
   border-radius: 2rem;
   border-bottom: 6px solid darkblue;
@@ -23,6 +23,7 @@ body {
   padding: 10px 20px 12px 0;
   text-align: center;
   overflow: scroll;
+  text-indent: 5px;
 }
 
 #results {
