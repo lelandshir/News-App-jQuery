@@ -16,8 +16,8 @@ $(() => {
   $(`.button`).click((ev) => {
     // $(`.input`).on(`keypress`, (ev) => {
     let userInput = $(`.input`).val();
-    let key = cd19b7aa2bd403ba7770919b14157c2; //7 starts
-    let link = `https://newsapi.org/v2/top-headlines?country=us&category=${userInput}&apiKey=7${key}`;
+    let key = eafdcc7f610434985c1acf69e3f0512; //7 starts
+    let link = `https://newsapi.org/v2/top-headlines?country=us&category=${userInput}&apiKey=1${key}`;
 
     if ($(`.input`).val() != "") {
       $(`#container-2`).empty();
